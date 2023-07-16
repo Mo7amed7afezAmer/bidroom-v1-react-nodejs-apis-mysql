@@ -1,0 +1,125 @@
+@import "global-rule";
+@import "components-style";
+
+* {
+    user-select: none;
+}
+
+/* ================================== */
+/* ================ APP ============= */
+/* ================================== */
+
+.App {
+    background-color: var(--bg-color-9);
+    min-height: 100vh;
+    h1 {
+        color: var(--skin-color)
+    }
+}
+
+/* ================ portfolio page ========== */
+.portfolio-page {
+    .page-header {
+        margin-bottom: 30px;
+        .header-links {
+            display: flex;
+            gap: 5px;
+            padding: 5px;
+            margin-top: 10px;
+            overflow-x: auto;
+            li {
+                flex-grow: 2;
+                padding: 7px;
+                text-align: center;
+                border: 1px solid transparent;
+                a {
+                    text-transform: capitalize;
+                    color: var(--txt-color-7);
+                }
+            }
+        }
+    }
+    .page-body {
+        .info-box {
+            color: var(--txt-color-9);
+            font-size: 20px;
+            text-transform: capitalize;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 25px;
+            span {
+                background-color: var(--skin-color);
+                color: var(--bg-color-7);
+                width: 20px;
+                height: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .inner-box {
+            height: 350px;
+            border-radius: 7px;
+            overflow: hidden;
+            margin-bottom: 10px;
+            .box-header {
+                background-color: var(--bg-color-5);
+                color: var(--txt-color-9);
+                height: 35px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-right: 15px;
+                padding-left: 15px;
+                text-transform: capitalize;
+                .icons {
+                    display: flex;
+                    gap: 5px;
+                    span {
+                        background-color: var(--bg-color-7);
+                        width: 10px;
+                        height: 10px;
+                        display: block;
+                        border-radius: 50%;
+                        &:first-child {
+                            background-color: var(--skin-color);
+                        }
+                    }
+                }
+                h6 {
+                    margin: 0;
+                }
+            }
+            .box-body {
+                overflow-x: hidden;
+                overflow-y: hidden;
+                width: 100%;
+                height: calc(100% - 35px); // 350 - 35 = 315
+                img {
+                    width: 100%;
+                    transform: translateY(0);
+                    transition: all 10s ease-in-out;
+                }
+                &:hover img {
+                    transform: translateY(calc(-100% + 315px));
+                }
+            }
+        }
+    }
+}
+
+// animations
+@keyframes scroll-hover {
+    from {
+        tpp: 0;
+    }
+    to {
+        bottom: 0;
+    }
+}
+
+
+/* ********************************************** */
+@import "responsive-rule";
