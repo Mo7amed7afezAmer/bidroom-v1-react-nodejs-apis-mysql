@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/bidroom-v1-react-nodejs-apis-mysql/static/css/main.3e57d85c.css",
+    "main.js": "/bidroom-v1-react-nodejs-apis-mysql/static/js/main.e525c2de.js",
+    "static/js/787.22e3b59d.chunk.js": "/bidroom-v1-react-nodejs-apis-mysql/static/js/787.22e3b59d.chunk.js",
+    "index.html": "/bidroom-v1-react-nodejs-apis-mysql/index.html",
+    "main.3e57d85c.css.map": "/bidroom-v1-react-nodejs-apis-mysql/static/css/main.3e57d85c.css.map",
+    "main.e525c2de.js.map": "/bidroom-v1-react-nodejs-apis-mysql/static/js/main.e525c2de.js.map",
+    "787.22e3b59d.chunk.js.map": "/bidroom-v1-react-nodejs-apis-mysql/static/js/787.22e3b59d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3e57d85c.css",
+    "static/js/main.e525c2de.js"
+  ]
+}
